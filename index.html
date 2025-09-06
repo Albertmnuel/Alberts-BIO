@@ -1,0 +1,107 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <style>
+    body {
+      background-color: #9d9ca2;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-box {
+      background-color:  #1a1a1a;
+      padding: 30px;
+      border-radius: 8px;
+       box-shadow: 0 0 30px #00bfff;
+      width: 100%;
+      max-width: 350px;
+    }
+
+    h2 {
+      text-align: center;
+      color:#00bfff;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color:#00bfff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0044cc;
+    }
+
+    .show-password {
+ margin-top: -5px;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form onsubmit="return validateLogin()">
+      <input type="text" id="username" placeholder="Albert" required />
+      <input type="password" id="password" placeholder="1234" required />
+      <label class="show-password">
+        <input type="checkbox" onclick="togglePassword()"> Show Password
+      </label>
+      <input type="submit" value="Login" />
+    </form>
+    <div class="footer">© 2025 Albert Emmanuel</div>
+  </div>
+
+  <script>
+    function validateLogin() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (username === "Albert" && password === "1234") {
+        window.location.href = "its ALbert.html"; // Change as needed
+        return false;
+      } else {
+        alert("Invalid login credentials.");
+        return false;
+      }
+    }
+
+    function togglePassword() {
+      const pwd = document.getElementById("password");
+      pwd.type = pwd.type === "password" ? "text" : "password";
+    }
+  </script>
+</body>
+</html>

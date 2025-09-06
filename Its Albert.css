@@ -1,0 +1,129 @@
+body{
+    background-color: #9d9ca2;
+}
+.nav{
+       box-shadow: 0 0 20px #00bfff;
+    display: flex;
+    align-items: center;
+    width: 1345px;
+    margin-top: -7px;
+    height: 100px;
+    border-radius: 15px;
+    background-color:  black;
+    justify-content: left;
+}
+
+.nav h2{
+    margin-left: 20px;
+    margin-right: 650px;
+    color: white;
+}
+.nav a, b, c, d, e{
+    margin-top: 20px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    padding-top: 20px;
+
+}
+
+.nav .home:hover{
+    color: black;
+    background-color: white;
+    border-radius: 18px;
+    padding: 7px;
+
+}
+
+.nav .feature:hover{
+    color: black;
+    background-color: white;
+    padding: 7px;
+    border-radius: 18px;
+
+}
+
+.nav .blog:hover{
+    color: black;
+    background-color: white;
+    border-radius: 18px;
+    padding: 7px ;
+
+}
+
+.nav .about:hover{
+    color: black;
+    background-color: white;
+    border-radius: 18px;
+    padding: 7px;
+
+}
+
+.nav .login:hover{
+    color: black;
+    background-color: white;
+    border-radius: 18px;
+    padding: 7px;
+
+}
+
+#navi{
+    background-color: linear-gradient(blue,aqua,purple);
+}
+
+.ht{
+    margin-left: 20px;
+    background-color: linear-gradient(purple , rgb(0, 68, 255) , blue);
+    margin-top: 230px;
+}
+
+.ht h2{
+    color: white;
+    font-size: 29px;
+}
+
+.ht h1{
+    font-size: 40px;
+}
+
+.vertnav{
+       box-shadow: 0 0 20px #00bfff;
+    position: absolute;
+    align-items: center;
+    display: flow-root;
+    height: 270px;
+    margin-left: 900px;
+    margin-top: -350px;
+    background-color: black;
+    width: 300px;
+    border-radius: 18px;
+    padding-bottom: 20px;
+    justify-content: space-between 12px;
+}
+.vertnav .min-nav{
+    height: 50px;
+}
+
+.vertnav .min-nav h1{
+    color: white;
+    margin-left: 15px;
+}
+
+.vertnav a{
+    text-decoration: none;
+    color: white;
+    
+    margin-bottom: 50px;
+    margin-left: 90px;
+    text-decoration: none;
+    font-size: 22px;    
+}
+
+.vertnav a:hover{
+    padding: 10px;
+    margin-bottom: 10px;
+    color: black;
+    border-radius: 12px;
+    background-color: white;
+}
